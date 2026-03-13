@@ -19,14 +19,27 @@
             width: 100vw;
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             font-family: sans-serif;
             position: relative;
         }
 
-        #sectionOne > nav{
+        #sectionOne > div{
             background-color: coral;
+            position: sticky;
+            top: 0;
+            padding: 30px;
+            color: white;
+            font-size: 20px;
+        }
+
+        section p{
+            margin-top: 100px;
+            font-size: 100px;
+            align-self: center;
+        }
+
+        section nav{
             position: absolute;
             top: 0;
             left: 0;
@@ -37,60 +50,28 @@
             font-size: 20px;
         }
 
-        #sectionOne > p{
-            margin-top: 100px;
-            font-size: 100px;
+        #sectionTwo{
+            background-color: dodgerblue;
         }
 
         #sectionTwo > nav{
             background-color: darkblue;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            padding: 30px;
-            color: white;
-            font-size: 20px;
         }
 
-        #sectionTwo > p{
-            margin-top: 100px;
-            font-size: 100px;
+        #sectionThree{
+            background-color: gray;
         }
 
         #sectionThree > nav{
-            background-color: darkblue;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            padding: 30px;
-            color: white;
-            font-size: 20px;
+            background-color: black;
         }
 
-        #sectionThree > p{
-            margin-top: 100px;
-            font-size: 100px;
+        #sectionFour{
+            background-color: orange;
         }
 
         #sectionFour > nav{
-            background-color: darkblue;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            padding: 30px;
-            color: white;
-            font-size: 20px;
-        }
-
-        #sectionFour > p{
-            margin-top: 100px;
-            font-size: 100px;
+            background-color: orangered;
         }
 
     </style>
@@ -99,12 +80,12 @@
 
 <body>
     <section id="sectionOne">
-        <nav>Card 1</nav>
+        <div>Card 1</div>
         <p>Hello</p>
     </section>
 
     <section id="sectionTwo">
-        <nav>Card 2</nav>
+        <div>Card 2</div>
         <p>How</p>
     </section>
 
