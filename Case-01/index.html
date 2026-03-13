@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="../assets/lib/normalize.css">
 
     <style>
+        section{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
         div{
             width: 50vw;
             height: 50vh;
@@ -41,15 +47,32 @@
             bottom: 0;
             right: 0;
         }
+
+        #centerSquare{
+            height: Calc(100vh / 3);
+            width: Calc(100vh / 3);
+            position: absolute;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
     </style>
 
 </head>
 
 <body>
+
+<section>
     <div id="div1"></div>
     <div id="div2"></div>
     <div id="div3"></div>
     <div id="div4"></div>
+
+    <div id="centerSquare"></div>
+</section>
 </body>
 
 </html>
