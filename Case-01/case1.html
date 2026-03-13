@@ -15,7 +15,7 @@
 
     <style>
         section{
-            position: relative;
+            position: absolute;
             width: 100vw;
             height: 100vh;
         }
@@ -36,6 +36,15 @@
             top: 0;
         }
 
+        #centerSquare, #centerCircle, .bigCircle, .smallSquare{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
         #div3{
             background-color: orange;
             bottom: 0;
@@ -49,103 +58,79 @@
         }
 
         #centerSquare{
-            height: Calc(100vh / 3);
-            width: Calc(100vh / 3);
-            position: absolute;
+            height: Calc(100vh/3);
+            width: Calc(100vh/3);
             background-color: white;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
         }
 
         #centerCircle{
             background-color: red;
-            width: 150px;
-            height: 150px;
+            height: Calc(50vh/3);
+            width: Calc(50vh/3);
             border-radius: 50%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
         }
 
         .bigCircle{
-            width: 200px;
-            height: 200px;
+            width: Calc(50vw/3);
+            height: Calc(50vw/3);
             border-radius: 50%;
             background-color: white;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
         }
 
         .smallSquare{
-            width: 75px;
-            height: 75px;
-            position: absolute;
+            width: Calc(50vw/8);
+            height: Calc(50vw/8);
             background-color: red;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
         }
 
         .centerCircle{
             background-color: white;
-            width: 150px;
-            height: 150px;
+            height: Calc(50vh/2);
+            width: Calc(50vh/2);
             border-radius: 50%;
             position: absolute;
         }
 
         #centerCircle1{
-            top: Calc(-200px / 3);
+            top: Calc((-50vh/2)/2);
             left: 0;
             right: 0;
             margin: auto;
         }
 
         #centerCircle2{
-            bottom: Calc(-200px / 3);
+            bottom: Calc((-50vh/2)/2);
             left: 0;
             right: 0;
             margin: auto;
         }
 
         .cornerCircle{
-            width: 200px;
-            height: 200px;
+            width: Calc(50vw/3);
+            height: Calc(50vw/3);
             border-radius: 50%;
             background-color: white;
             position: absolute;
         }
 
         #cornerCircle1{
-            top: Calc(-300px / 3);
-            left: Calc(-300px / 3);
+            top: Calc(-50vh/3);
+            left: Calc((-50vw/3)/2);
         }
 
         #cornerCircle2{
-            top: Calc(-300px / 3);
-            right: Calc(-300px / 3);
+            top: Calc(-50vh/3);
+            right: Calc((-50vw/3)/2);
         }
 
         #cornerCircle3{
-            bottom: Calc(-300px / 3);
-            left: Calc(-300px / 3);
+            bottom: Calc(-50vh/3);
+            left: Calc((-50vw/3)/2);
         }
 
         #cornerCircle4{
-            bottom: Calc(-300px / 3);
-            right: Calc(-300px / 3);
+            bottom: Calc(-50vh/3);
+            right: Calc((-50vw/3)/2);
         }
     </style>
 
